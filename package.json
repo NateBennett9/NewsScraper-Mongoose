@@ -1,0 +1,37 @@
+{
+  "name": "newsscraper-mongoose",
+  "version": "1.0.0",
+  "description": "NewsScraper-Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NateBennett9/NewsScraper-Mongoose.git"
+  },
+  "author": "Nate Bennett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NateBennett9/NewsScraper-Mongoose/issues"
+  },
+  "homepage": "https://github.com/NateBennett9/NewsScraper-Mongoose#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.1.2",
+    "mongo": "^0.1.0",
+    "mongoose": "^5.6.7",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
