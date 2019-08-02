@@ -24,10 +24,12 @@ app.use(bodyParser.urlencoded({
 
 app.use(router);
 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+/* var db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines"; */
+/* "mongodb://user1:password1@ds359077.mlab.com:59077/heroku_lhlv6rd9" */
 
-var db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-
-mongoose.connect(db, function(error) {
+mongoose.connect(MONGODB_URI);
+/* mongoose.connect(db, function(error) {
   if (error) {
     console.log(error);
   }
@@ -35,6 +37,7 @@ mongoose.connect(db, function(error) {
     console.log("mongoose connection is successful");
   }
 });
+*/
 
 app.listen(PORT, function() {
   console.log("Listening on port:" + PORT);
